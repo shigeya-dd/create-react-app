@@ -4,8 +4,8 @@ import './App.css';
 import { datadogRum } from '@datadog/browser-rum';
     
 datadogRum.init({
-    applicationId: '73bac5d1-4bf0-4c6e-9047-513273db31f0',
-    clientToken: 'pub895892b85eaf78bd6d8b29546f4ee9c3',
+    applicationId: process.env.APPLICATION_ID,
+    clientToken: process.env.CLIENT_TOKEN,
     site: 'datadoghq.com',
     service:'test',
     // Specify a version number to identify the deployed version of your application in Datadog 
